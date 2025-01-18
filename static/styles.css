@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: auto;
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.summary {
+    text-align: center;
+    margin: 20px;
+}
+
+form {
+    margin: 20px;
+    padding: 10px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    max-width: 600px;
+}

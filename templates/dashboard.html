@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Budget Dashboard</h1>
+
+    <div class="summary">
+        <h2>Total Income: {{ total_income }}</h2>
+        <h2>Total Expenses: {{ total_expenses }}</h2>
+        <h2>Total Savings: {{ total_savings }}</h2>
+    </div>
+
+    <div>
+        <h3>Add Income</h3>
+        <form action="/add_income" method="POST">
+            <input type="number" name="amount" placeholder="Amount" required>
+            <input type="text" name="description" placeholder="Description">
+            <input type="date" name="date" required>
+            <button type="submit">Add Income</button>
+        </form>
+
+        <h3>Add Expense</h3>
+        <form action="/add_expense" method="POST">
+            <input type="number" name="amount" placeholder="Amount" required>
+            <input type="text" name="description" placeholder="Description">
+            <input type="date" name="date" required>
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <h3>Add Savings</h3>
+        <form action="/add_savings" method="POST">
+            <input type="number" name="amount" placeholder="Amount" required>
+            <input type="text" name="description" placeholder="Description">
+            <input type="date" name="date" required>
+            <button type="submit">Add Savings</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>

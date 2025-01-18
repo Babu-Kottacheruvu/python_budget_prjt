@@ -1,0 +1,16 @@
+<!-- <h3>Financial Overview</h3>
+    <canvas id="financialChart"></canvas>
+    <script>
+        var ctx = document.getElementById('financialChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Income', 'Expenses', 'Savings'],
+                datasets: [{
+                    label: 'Amount',
+                    data: [{{ total_income }}, {{ total_expenses }}, {{ total_savings }}],
+                    backgroundColor: ['#4caf50', '#f44336', '#2196f3']
+                }]
+            }
+        });
+    </script> -->

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Budget Dashboard</h1>
+
+    
+
+    <div>
+        <h3>Add Income</h3>
+        <form action="/add_income" method="POST">
+            <input type="number" name="amount" placeholder="Amount" required>
+            <input type="text" name="description" placeholder="Description">
+            <input type="date" name="date" required>
+            <button type="submit">Add Income</button>
+        </form>
+
+    </div>
+</body>
+</html>
