@@ -13,7 +13,7 @@
 
     <div>
         <h3>Add Income</h3>
-        <form action="/add_income" method="POST">
+        <form  id="savingsForm" action="/add_income" method="POST">
             <input type="number" name="amount" placeholder="Amount" required>
             <input type="text" name="description" placeholder="Description">
             <input type="date" name="date" required>
@@ -21,5 +21,14 @@
         </form>
 
     </div>
+
+    <script>
+         document.getElementById('savingsForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                alert('Amount is added to your Income');
+                this.submit(); // Submit the form programmatically if needed
+            });
+    </script>
+
 </body>
 </html>
